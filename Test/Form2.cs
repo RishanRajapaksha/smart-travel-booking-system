@@ -118,9 +118,24 @@ namespace Test
 
 
                 // Price
-                //Total Price = (minimum_night_price × Nights ) + Additional Guest Prices
+                //Total Price = (price_per_one_person × Nights ) + Additional Guest Prices
                 Label price = new Label();
-                price.Text = row["price_per_one_person"].ToString() + "A : " +row["additional_guest_prices"].ToString();
+
+                Decimal price_per_one_person = Convert.ToDecimal(row["price_per_one_person"].ToString());
+                Decimal additional_guest_prices = Convert.ToDecimal(row["additional_guest_prices"].ToString());
+                Decimal total;
+
+                if (persons_stay > 1)
+                {
+                     total = (price_per_one_person * nights_stay) + (additional_guest_prices * persons_stay);
+                }
+                else {
+                     total = (price_per_one_person * nights_stay);
+                }
+
+
+
+                price.Text = total.ToString();
                 price.ForeColor = Color.Red;
                 price.Font = new Font("Arial", 16, FontStyle.Bold);
                 price.Left = 750;
