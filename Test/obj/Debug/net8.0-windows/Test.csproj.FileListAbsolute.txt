@@ -32,3 +32,4 @@ C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\runti
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.csproj.AssemblyReference.cache
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.csproj.Up2Date
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Properties.Resources.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Form3.resources

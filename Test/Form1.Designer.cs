@@ -32,13 +32,14 @@
             textBox1 = new TextBox();
             label2 = new Label();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe Fluent Icons", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(230, 53);
+            label1.Location = new Point(237, 117);
             label1.Name = "label1";
             label1.Size = new Size(332, 60);
             label1.TabIndex = 0;
@@ -47,9 +48,9 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(151, 217);
+            textBox1.Location = new Point(158, 281);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(474, 27);
+            textBox1.Size = new Size(532, 27);
             textBox1.TabIndex = 1;
             textBox1.Text = "I want to travel to Kadawatha. I am traveling with my 2 kids.this variables. I will stay 2 nights.";
             textBox1.TextChanged += textBox1_TextChanged;
@@ -58,7 +59,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe Fluent Icons", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(169, 113);
+            label2.Location = new Point(176, 177);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.Yes;
             label2.Size = new Size(437, 37);
@@ -67,7 +68,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(230, 265);
+            button1.Location = new Point(237, 329);
             button1.Name = "button1";
             button1.Size = new Size(329, 39);
             button1.TabIndex = 3;
@@ -75,11 +76,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(657, 22);
+            button2.Name = "button2";
+            button2.Size = new Size(161, 29);
+            button2.TabIndex = 4;
+            button2.Text = "Register Your Hotel";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(858, 474);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(textBox1);
@@ -96,5 +108,6 @@
         private TextBox textBox1;
         private Label label2;
         private Button button1;
+        private Button button2;
     }
 }
