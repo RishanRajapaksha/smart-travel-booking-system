@@ -32,6 +32,7 @@ namespace Test
             persons.Text = persons_stay.ToString();
             nights.Text = nights_stay.ToString();
 
+            DataTable dt = new DataTable(); 
 
             try
             {
@@ -50,7 +51,7 @@ namespace Test
                         INNER JOIN District d ON p.DistrictID = d.ID";
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
+                    dt = new DataTable();
 
                     adapter.Fill(dt);
 
@@ -62,8 +63,13 @@ namespace Test
                 MessageBox.Show("Error: " + ex.Message);
             }
 
-            for (int i = 0; i < 5; i++)
+
+
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
+                DataRow row = dt.Rows[i];
+
+
                 Panel card = new Panel();
                 card.Width = 1000;
                 card.Height = 220;
@@ -82,7 +88,7 @@ namespace Test
 
                 // Hotel Name
                 Label title = new Label();
-                title.Text = "Browns Beach Galle";
+                title.Text = row["Title"].ToString();
                 title.Font = new Font("Arial", 20, FontStyle.Bold);
                 title.Left = 300;
                 title.Top = 30;
@@ -90,7 +96,7 @@ namespace Test
 
                 //Property category
                 Label pc = new Label();
-                pc.Text = "Hi";
+                pc.Text = row["PropertyCategory"].ToString();
                 pc.Font = new Font("Segoe UI Emoji", 12);
                 pc.Left = 300;
                 pc.Top = 80;
@@ -100,7 +106,7 @@ namespace Test
 
                 //Address
                 Label address = new Label();
-                address.Text = "📍 Buthpitiya";
+                address.Text = "📍 " + row["Address"].ToString(); ;
                 address.Font = new Font("Segoe UI Emoji", 12);
                 address.Left = 300;
                 address.Top = 110;
