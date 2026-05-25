@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data.MySqlClient;
+using System.Drawing;
 
 namespace Test
 {
@@ -59,6 +60,85 @@ namespace Test
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                Panel card = new Panel();
+                card.Width = 1000;
+                card.Height = 220;
+                card.BorderStyle = BorderStyle.FixedSingle;
+
+                // Picture
+                PictureBox pic = new PictureBox();
+                pic.Width = 278;
+                pic.Height = 156;
+                pic.Left = 20;
+                pic.Top = 30;
+                pic.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                // Example image
+                pic.Image = Image.FromFile(@"C:\Users\Rishan_Rajapaksha\Downloads\images.jpg");
+
+                // Hotel Name
+                Label title = new Label();
+                title.Text = "Browns Beach Galle";
+                title.Font = new Font("Arial", 20, FontStyle.Bold);
+                title.Left = 300;
+                title.Top = 30;
+                title.AutoSize = true;
+
+                //Property category
+                Label pc = new Label();
+                pc.Text = "Hi";
+                pc.Font = new Font("Segoe UI Emoji", 12);
+                pc.Left = 300;
+                pc.Top = 80;
+                pc.AutoSize = true;
+                card.Controls.Add(pc);
+
+
+                //Address
+                Label address = new Label();
+                address.Text = "📍 Buthpitiya";
+                address.Font = new Font("Segoe UI Emoji", 12);
+                address.Left = 300;
+                address.Top = 110;
+                address.AutoSize = true;
+                card.Controls.Add(address);
+
+
+
+                // Price
+                Label price = new Label();
+                price.Text = "Rs. 100,000";
+                price.ForeColor = Color.Red;
+                price.Font = new Font("Arial", 16, FontStyle.Bold);
+                price.Left = 750;
+                price.Top = 40;
+                price.AutoSize = true;
+
+                //Book the hotel button
+                System.Windows.Forms.Button btn = new System.Windows.Forms.Button();
+                btn.BackColor = Color.Blue;
+                btn.ForeColor = Color.White;
+                btn.Text = "Book the hotel";
+                btn.Left = 750;
+                btn.Top = 80;
+                btn.Width = 157;
+                btn.Height = 51;
+                card.Controls.Add(btn);
+
+
+                // Add controls to card
+                card.Controls.Add(pic);
+                card.Controls.Add(title);
+             
+                card.Controls.Add(price);
+                //card.Controls.Add(btn);
+
+                // Add card to FlowLayoutPanel
+                flowLayoutPanel1.Controls.Add(card);
             }
 
 

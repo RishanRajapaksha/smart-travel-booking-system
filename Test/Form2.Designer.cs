@@ -40,6 +40,8 @@
             address = new Label();
             button1 = new Button();
             label4 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            colorDialog1 = new ColorDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -139,10 +141,11 @@
             // property_category
             // 
             property_category.AutoSize = true;
+            property_category.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             property_category.Location = new Point(339, 165);
             property_category.Margin = new Padding(4, 0, 4, 0);
             property_category.Name = "property_category";
-            property_category.Size = new Size(159, 23);
+            property_category.Size = new Size(166, 22);
             property_category.TabIndex = 8;
             property_category.Text = "Property Category";
             // 
@@ -183,11 +186,22 @@
             label4.TabIndex = 11;
             label4.Text = "Rs. 100,000";
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(27, 73);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1130, 574);
+            flowLayoutPanel1.TabIndex = 12;
+            flowLayoutPanel1.WrapContents = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 681);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(label4);
             Controls.Add(button1);
             Controls.Add(address);
@@ -224,5 +238,7 @@
         private Label address;
         private Button button1;
         private Label label4;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private ColorDialog colorDialog1;
     }
 }
