@@ -51,7 +51,8 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(474, 27);
             textBox1.TabIndex = 1;
-            textBox1.Text = "Describe Where You Wanna Go?";
+            textBox1.Text = "I want to travel to Kadawatha. I am traveling with my 2 kids.this variables. I will stay 2 nights.";
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 

@@ -64,12 +64,12 @@ namespace Test
                         .GetProperty("text")
                         .GetString();
 
-                    Debug.WriteLine(output);
+                    //Debug.WriteLine(output);
 
-                    Form form2 = new Form2();
+                    Form form2 = new Form2(output);
                     form2.Show();
 
-                    
+
 
                 }
                 else
@@ -81,6 +81,11 @@ namespace Test
             {
                 MessageBox.Show("Exception: " + ex.Message);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
