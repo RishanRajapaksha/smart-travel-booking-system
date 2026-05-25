@@ -39,16 +39,17 @@ namespace Test
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
-
                     string query = @"
-                        SELECT 
-                            p.ID,
-                            p.Title,
-                            p.PropertyCategory,
-                            p.Address,
-                            d.Title AS District
-                        FROM Property p
-                        INNER JOIN District d ON p.DistrictID = d.ID";
+                            SELECT 
+                                p.ID,
+                                p.Title,
+                                p.PropertyCategory,
+                                p.Address,
+                                d.Title AS District,
+                                p.price_per_one_person
+                            FROM Property p
+                            INNER JOIN District d ON p.DistrictID = d.ID;
+                            ";
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     dt = new DataTable();
@@ -117,7 +118,7 @@ namespace Test
 
                 // Price
                 Label price = new Label();
-                price.Text = "Rs. 100,000";
+                price.Text = row["price_per_one_person"].ToString();
                 price.ForeColor = Color.Red;
                 price.Font = new Font("Arial", 16, FontStyle.Bold);
                 price.Left = 750;
