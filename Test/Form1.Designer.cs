@@ -48,9 +48,10 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(158, 281);
+            textBox1.Location = new Point(82, 246);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(532, 27);
+            textBox1.Size = new Size(666, 67);
             textBox1.TabIndex = 1;
             textBox1.Text = "I want to travel to Kadawatha. I am traveling with my 2 kids.this variables. I will stay 2 nights.";
             textBox1.TextChanged += textBox1_TextChanged;
