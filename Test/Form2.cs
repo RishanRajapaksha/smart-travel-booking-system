@@ -52,7 +52,7 @@ namespace Test
                     DataTable dt = new DataTable();
 
                     adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
+
 
                 }
             }
