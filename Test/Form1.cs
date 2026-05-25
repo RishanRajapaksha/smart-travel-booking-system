@@ -65,6 +65,12 @@ namespace Test
                         .GetString();
 
                     Debug.WriteLine(output);
+
+                    Form form2 = new Form2();
+                    form2.Show();
+
+                    
+
                 }
                 else
                 {
