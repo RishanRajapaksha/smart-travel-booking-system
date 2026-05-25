@@ -117,6 +117,7 @@ namespace Test
 
 
                 // Price
+                //Total Price = (minimum_night_price × Nights ) + Additional Guest Prices
                 Label price = new Label();
                 price.Text = row["price_per_one_person"].ToString();
                 price.ForeColor = Color.Red;
