@@ -40,13 +40,14 @@ namespace Test
                 {
                     conn.Open();
                     string query = @"
-                            SELECT 
+                             SELECT 
                                 p.ID,
                                 p.Title,
                                 p.PropertyCategory,
                                 p.Address,
                                 d.Title AS District,
-                                p.price_per_one_person
+                                p.price_per_one_person,
+                                p.additional_guest_prices
                             FROM Property p
                             INNER JOIN District d ON p.DistrictID = d.ID;
                             ";
@@ -119,7 +120,7 @@ namespace Test
                 // Price
                 //Total Price = (minimum_night_price × Nights ) + Additional Guest Prices
                 Label price = new Label();
-                price.Text = row["price_per_one_person"].ToString();
+                price.Text = row["price_per_one_person"].ToString() + "A : " +row["additional_guest_prices"].ToString();
                 price.ForeColor = Color.Red;
                 price.Font = new Font("Arial", 16, FontStyle.Bold);
                 price.Left = 750;
