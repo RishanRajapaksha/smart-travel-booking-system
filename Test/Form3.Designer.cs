@@ -36,7 +36,6 @@
             comboBox1 = new ComboBox();
             label4 = new Label();
             label6 = new Label();
-            textBox3 = new TextBox();
             label5 = new Label();
             textBox4 = new TextBox();
             label7 = new Label();
@@ -46,6 +45,7 @@
             label10 = new Label();
             textBox6 = new TextBox();
             button1 = new Button();
+            comboBox2 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -101,7 +101,7 @@
             comboBox1.Items.AddRange(new object[] { "Apartment", "Resort", "Guest House", "Luxury" });
             comboBox1.Location = new Point(34, 345);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(694, 28);
             comboBox1.TabIndex = 5;
             // 
             // label4
@@ -123,14 +123,6 @@
             label6.Size = new Size(101, 20);
             label6.TabIndex = 8;
             label6.Text = "Address (CIty)";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(34, 442);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(694, 27);
-            textBox3.TabIndex = 7;
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label5
             // 
@@ -212,12 +204,22 @@
             button1.TabIndex = 17;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(34, 442);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(694, 28);
+            comboBox2.TabIndex = 18;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 782);
+            Controls.Add(comboBox2);
             Controls.Add(button1);
             Controls.Add(label9);
             Controls.Add(label10);
@@ -228,7 +230,6 @@
             Controls.Add(label5);
             Controls.Add(textBox4);
             Controls.Add(label6);
-            Controls.Add(textBox3);
             Controls.Add(label4);
             Controls.Add(comboBox1);
             Controls.Add(label3);
@@ -252,7 +253,6 @@
         private ComboBox comboBox1;
         private Label label4;
         private Label label6;
-        private TextBox textBox3;
         private Label label5;
         private TextBox textBox4;
         private Label label7;
@@ -262,5 +262,6 @@
         private Label label10;
         private TextBox textBox6;
         private Button button1;
+        private ComboBox comboBox2;
     }
 }
