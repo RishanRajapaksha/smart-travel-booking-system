@@ -88,7 +88,7 @@ namespace Test
                     LongDescription,
                     PropertyCategory,
                     Address,
-                    DefaultPictureID,
+                    PictureURL,
                     price_per_one_person,
                     additional_guest_prices
                 )
