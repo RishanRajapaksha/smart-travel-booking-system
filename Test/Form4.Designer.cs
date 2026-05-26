@@ -188,6 +188,7 @@
             button2.TabIndex = 14;
             button2.Text = "Register";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label9
             // 
@@ -242,6 +243,7 @@
             button4.TabIndex = 20;
             button4.Text = "Login";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form4
             // 

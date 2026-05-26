@@ -1,5 +1,7 @@
 ﻿using Google.Apis.Auth;
 using Google.Apis.Auth.OAuth2;
+using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,11 +14,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Test
 {
     public partial class Form4 : Form
     {
+        string connectionString = "server=localhost;user=root;password=;database=travelDB;port=3306;";
+
+
         public Form4()
         {
             InitializeComponent();
@@ -109,5 +115,131 @@ namespace Test
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var name = textBox1.Text;
+            var phone_number = textBox2.Text;
+            var email = textBox3.Text;
+            var password = textBox4.Text;
+
+
+
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            try
+            {
+               
+                {
+                    conn.Open();
+
+                    string query = @"INSERT INTO property_owner
+                            (Name, Phone, Email, Password)
+                            VALUES
+                            (@name, @phone, @email, @password)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@phone", phone_number);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        int result = cmd.ExecuteNonQuery();
+
+                        if (result > 0)
+                        {
+                            MessageBox.Show("Data inserted successfully!",
+                                "Success",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Insert failed!",
+                                "Warning",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // =========================
+                // DB related errors
+                // =========================
+
+                if (ex.Number == 1062)
+                {
+                    MessageBox.Show("Email already exists!",
+                        "Duplicate Entry",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Database Error: " + ex.Message,
+                        "SQL Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                // =========================
+                // General errors
+                // =========================
+                MessageBox.Show("Unexpected Error: " + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+
+                string query = "SELECT * FROM property_owner WHERE Email=@Email AND Password=@Password";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                String email = textBox7.Text;
+                String password = textBox6.Text;
+
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@Password", password);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    MessageBox.Show("Login Success!");
+
+                    // Example: open next form
+                    //DashboardForm dash = new DashboardForm();
+                    //dash.Show();
+                    //this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Email or Password");
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
+
 }
