@@ -75,7 +75,53 @@ namespace Test
             //Debug.WriteLine(price_per_person);
             //Debug.WriteLine(additional_guest_charge);
 
-            
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query = @"
+                INSERT INTO Property
+                (
+                    Title,
+                    LongDescription,
+                    PropertyCategory,
+                    Address,
+                    DefaultPictureID,
+                    price_per_one_person,
+                    additional_guest_prices
+                )
+                VALUES
+                (
+                    @title,
+                    @description,
+                    @category,
+                    @address,
+                    @image,
+                    @price,
+                    @extra
+                )";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@title", hotel_name);
+                    cmd.Parameters.AddWithValue("@description", description);
+                    cmd.Parameters.AddWithValue("@category", hotel_type);
+                    cmd.Parameters.AddWithValue("@address", address);
+                    cmd.Parameters.AddWithValue("@image", hotel_image);
+                    cmd.Parameters.AddWithValue("@price", price_per_person);
+                    cmd.Parameters.AddWithValue("@extra", additional_guest_charge);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Hotel added successfully!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
