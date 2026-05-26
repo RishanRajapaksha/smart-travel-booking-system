@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripDropDownButton1 = new ToolStripDropDownButton();
+            hiToolStripMenuItem = new ToolStripMenuItem();
+            registToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -79,19 +85,58 @@
             // 
             // button2
             // 
-            button2.Location = new Point(657, 22);
+            button2.Location = new Point(649, 419);
             button2.Name = "button2";
             button2.Size = new Size(161, 29);
             button2.TabIndex = 4;
             button2.Text = "Register Your Hotel";
             button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
             button2.Click += button2_Click;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(858, 74);
+            toolStrip1.TabIndex = 5;
+            toolStrip1.Text = "Login";
+            // 
+            // toolStripDropDownButton1
+            // 
+            toolStripDropDownButton1.Alignment = ToolStripItemAlignment.Right;
+            toolStripDropDownButton1.BackColor = SystemColors.ControlLight;
+            toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { hiToolStripMenuItem, registToolStripMenuItem });
+            toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
+            toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
+            toolStripDropDownButton1.Margin = new Padding(10, 20, 30, 10);
+            toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            toolStripDropDownButton1.Padding = new Padding(50, 20, 0, 0);
+            toolStripDropDownButton1.Size = new Size(178, 44);
+            toolStripDropDownButton1.Text = "Register / Login";
+            toolStripDropDownButton1.Click += toolStripDropDownButton1_Click;
+            // 
+            // hiToolStripMenuItem
+            // 
+            hiToolStripMenuItem.Name = "hiToolStripMenuItem";
+            hiToolStripMenuItem.Size = new Size(268, 26);
+            hiToolStripMenuItem.Text = "Register As A Hotel Owner";
+            // 
+            // registToolStripMenuItem
+            // 
+            registToolStripMenuItem.Name = "registToolStripMenuItem";
+            registToolStripMenuItem.Size = new Size(268, 26);
+            registToolStripMenuItem.Text = "Register As A Traveller";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(858, 474);
+            Controls.Add(toolStrip1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -99,6 +144,8 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -110,5 +157,9 @@
         private Label label2;
         private Button button1;
         private Button button2;
+        private ToolStrip toolStrip1;
+        private ToolStripDropDownButton toolStripDropDownButton1;
+        private ToolStripMenuItem hiToolStripMenuItem;
+        private ToolStripMenuItem registToolStripMenuItem;
     }
 }

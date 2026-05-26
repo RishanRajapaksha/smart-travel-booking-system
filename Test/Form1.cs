@@ -93,5 +93,15 @@ namespace Test
             Form form3 = new Form3();
             form3.Show();
         }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kohomadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
