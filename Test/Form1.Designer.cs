@@ -44,12 +44,14 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ButtonFace;
             label1.Font = new Font("Segoe Fluent Icons", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(237, 117);
             label1.Name = "label1";
             label1.Size = new Size(332, 60);
             label1.TabIndex = 0;
             label1.Text = "Rishan Travels";
+            label1.Click += label1_Click;
             // 
             // textBox1
             // 
@@ -103,6 +105,7 @@
             toolStrip1.Size = new Size(858, 74);
             toolStrip1.TabIndex = 5;
             toolStrip1.Text = "Login";
+            toolStrip1.ItemClicked += toolStrip1_ItemClicked;
             // 
             // toolStripDropDownButton1
             // 
@@ -135,6 +138,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.CSIRO_ScienceImage_4051_Water_surface_Burdekin_River_near_Charters_Towers_QLD;
             ClientSize = new Size(858, 474);
             Controls.Add(toolStrip1);
             Controls.Add(button2);

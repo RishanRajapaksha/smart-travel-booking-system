@@ -63,6 +63,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CSIRO_ScienceImage_4051_Water_surface_Burdekin_River_near_Charters_Towers_QLD {
+            get {
+                object obj = ResourceManager.GetObject("CSIRO_ScienceImage_4051_Water_surface_Burdekin_River_near_Charters_Towers_QLD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
