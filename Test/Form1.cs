@@ -94,14 +94,10 @@ namespace Test
             form3.Show();
         }
 
-        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        private void reg_as_hotel_owner_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void kohomadaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            Form form4 = new Form4();
+            form4.Show();
         }
     }
 }

@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|c:\\users\\rishan_rajapaksha\\source\\repos\\test\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|c:\\users\\rishan_rajapaksha\\source\\repos\\test\\test\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|c:\\users\\rishan_rajapaksha\\source\\repos\\test\\test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|c:\\users\\rishan_rajapaksha\\source\\repos\\test\\test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\test\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +54,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Test\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form1.Designer.cs*",
+              "RelativeToolTip": "Test\\Form1.Designer.cs*",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAawH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T03:53:57.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form4.cs",
+              "RelativeDocumentMoniker": "Test\\Form4.cs",
+              "ToolTip": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form4.cs [Design]",
+              "RelativeToolTip": "Test\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T03:50:12.213Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form3.cs",
               "RelativeDocumentMoniker": "Test\\Form3.cs",
               "ToolTip": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form3.cs",
               "RelativeToolTip": "Test\\Form3.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAAEkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwEkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T17:12:44.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form3.cs",
               "RelativeDocumentMoniker": "Test\\Form3.cs",
@@ -71,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form2.cs",
               "RelativeDocumentMoniker": "Test\\Form2.cs",
@@ -84,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form2.cs",
               "RelativeDocumentMoniker": "Test\\Form2.cs",
@@ -96,20 +129,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form1.cs",
               "RelativeDocumentMoniker": "Test\\Form1.cs",
               "ToolTip": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form1.cs*",
               "RelativeToolTip": "Test\\Form1.cs*",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAmwGMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T03:29:31.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Form1.cs",
               "RelativeDocumentMoniker": "Test\\Form1.cs",

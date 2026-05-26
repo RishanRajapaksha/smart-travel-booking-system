@@ -36,8 +36,8 @@
             button2 = new Button();
             toolStrip1 = new ToolStrip();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
-            hiToolStripMenuItem = new ToolStripMenuItem();
-            registToolStripMenuItem = new ToolStripMenuItem();
+            reg_as_hotel_owner = new ToolStripMenuItem();
+            reg_as_a_traveller = new ToolStripMenuItem();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -109,7 +109,7 @@
             toolStripDropDownButton1.Alignment = ToolStripItemAlignment.Right;
             toolStripDropDownButton1.BackColor = SystemColors.ControlLight;
             toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { hiToolStripMenuItem, registToolStripMenuItem });
+            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { reg_as_hotel_owner, reg_as_a_traveller });
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Margin = new Padding(10, 20, 30, 10);
@@ -117,19 +117,19 @@
             toolStripDropDownButton1.Padding = new Padding(50, 20, 0, 0);
             toolStripDropDownButton1.Size = new Size(178, 44);
             toolStripDropDownButton1.Text = "Register / Login";
-            toolStripDropDownButton1.Click += toolStripDropDownButton1_Click;
             // 
-            // hiToolStripMenuItem
+            // reg_as_hotel_owner
             // 
-            hiToolStripMenuItem.Name = "hiToolStripMenuItem";
-            hiToolStripMenuItem.Size = new Size(268, 26);
-            hiToolStripMenuItem.Text = "Register As A Hotel Owner";
+            reg_as_hotel_owner.Name = "reg_as_hotel_owner";
+            reg_as_hotel_owner.Size = new Size(268, 26);
+            reg_as_hotel_owner.Text = "Register As A Hotel Owner";
+            reg_as_hotel_owner.Click += reg_as_hotel_owner_Click;
             // 
-            // registToolStripMenuItem
+            // reg_as_a_traveller
             // 
-            registToolStripMenuItem.Name = "registToolStripMenuItem";
-            registToolStripMenuItem.Size = new Size(268, 26);
-            registToolStripMenuItem.Text = "Register As A Traveller";
+            reg_as_a_traveller.Name = "reg_as_a_traveller";
+            reg_as_a_traveller.Size = new Size(268, 26);
+            reg_as_a_traveller.Text = "Register As A Traveller";
             // 
             // Form1
             // 
@@ -159,7 +159,7 @@
         private Button button2;
         private ToolStrip toolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton1;
-        private ToolStripMenuItem hiToolStripMenuItem;
-        private ToolStripMenuItem registToolStripMenuItem;
+        private ToolStripMenuItem reg_as_hotel_owner;
+        private ToolStripMenuItem reg_as_a_traveller;
     }
 }
