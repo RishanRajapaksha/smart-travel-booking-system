@@ -62,7 +62,8 @@ namespace Test
             String hotel_name = textBox1.Text;
             String description = textBox2.Text;
             String hotel_type = comboBox1.Text;
-            int address = Convert.ToInt32(comboBox2.SelectedValue);
+            String address = textBox3.Text;
+            int district = Convert.ToInt32(comboBox2.SelectedValue);
             String hotel_image = textBox4.Text;
             String price_per_person = textBox5.Text;
             String additional_guest_charge = textBox6.Text;
@@ -70,7 +71,8 @@ namespace Test
             //Debug.WriteLine(hotel_name);
             //Debug.WriteLine(description);
             //Debug.WriteLine(hotel_type);
-            //Debug.WriteLine("Address" + address);
+            //Debug.WriteLine(address);
+            //Debug.WriteLine("district" + district);
             //Debug.WriteLine(hotel_image);
             //Debug.WriteLine(price_per_person);
             //Debug.WriteLine(additional_guest_charge);
@@ -83,32 +85,35 @@ namespace Test
 
                     string query = @"
                 INSERT INTO Property
-                (
-                    Title,
-                    LongDescription,
-                    PropertyCategory,
-                    Address,
-                    PictureURL,
-                    price_per_one_person,
-                    additional_guest_prices
-                )
-                VALUES
-                (
-                    @title,
-                    @description,
-                    @category,
-                    @address,
-                    @image,
-                    @price,
-                    @extra
-                )";
+                    (
+                        Title,
+                        LongDescription,
+                        PropertyCategory,
+                        Address,
+                        DistrictID,
+                        PictureURL,
+                        price_per_one_person,
+                        additional_guest_prices
+                    )
+                    VALUES
+                    (
+                        @title,
+                        @description,
+                        @category,
+                        @address,
+                        @district,
+                        @image,
+                        @price,
+                        @extra
+                    );";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@title", hotel_name);
                     cmd.Parameters.AddWithValue("@description", description);
                     cmd.Parameters.AddWithValue("@category", hotel_type);
-                    cmd.Parameters.AddWithValue("@address", address);
+                    cmd.Parameters.AddWithValue("@address", address.ToString());
+                    cmd.Parameters.AddWithValue("@district", district);
                     cmd.Parameters.AddWithValue("@image", hotel_image);
                     cmd.Parameters.AddWithValue("@price", price_per_person);
                     cmd.Parameters.AddWithValue("@extra", additional_guest_charge);

@@ -46,6 +46,8 @@
             textBox6 = new TextBox();
             button1 = new Button();
             comboBox2 = new ComboBox();
+            label11 = new Label();
+            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -128,7 +130,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = SystemColors.ControlText;
-            label5.Location = new Point(34, 506);
+            label5.Location = new Point(34, 642);
             label5.Name = "label5";
             label5.Size = new Size(132, 20);
             label5.TabIndex = 10;
@@ -136,7 +138,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(34, 533);
+            textBox4.Location = new Point(34, 669);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(694, 27);
             textBox4.TabIndex = 9;
@@ -145,7 +147,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ControlText;
-            label7.Location = new Point(34, 612);
+            label7.Location = new Point(34, 748);
             label7.Name = "label7";
             label7.Size = new Size(112, 20);
             label7.TabIndex = 12;
@@ -153,7 +155,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(66, 639);
+            textBox5.Location = new Point(66, 775);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(276, 27);
             textBox5.TabIndex = 11;
@@ -162,7 +164,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(40, 642);
+            label8.Location = new Point(40, 778);
             label8.Name = "label8";
             label8.Size = new Size(27, 20);
             label8.TabIndex = 13;
@@ -172,7 +174,7 @@
             // 
             label9.AutoSize = true;
             label9.ForeColor = SystemColors.ControlText;
-            label9.Location = new Point(395, 642);
+            label9.Location = new Point(395, 778);
             label9.Name = "label9";
             label9.Size = new Size(27, 20);
             label9.TabIndex = 16;
@@ -182,7 +184,7 @@
             // 
             label10.AutoSize = true;
             label10.ForeColor = SystemColors.ControlText;
-            label10.Location = new Point(389, 612);
+            label10.Location = new Point(389, 748);
             label10.Name = "label10";
             label10.Size = new Size(171, 20);
             label10.TabIndex = 15;
@@ -190,7 +192,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(421, 639);
+            textBox6.Location = new Point(421, 775);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(307, 27);
             textBox6.TabIndex = 14;
@@ -198,7 +200,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(47, 707);
+            button1.Location = new Point(47, 843);
             button1.Name = "button1";
             button1.Size = new Size(666, 39);
             button1.TabIndex = 17;
@@ -214,11 +216,31 @@
             comboBox2.Size = new Size(694, 28);
             comboBox2.TabIndex = 18;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.ForeColor = SystemColors.ControlText;
+            label11.Location = new Point(34, 509);
+            label11.Name = "label11";
+            label11.Size = new Size(62, 20);
+            label11.TabIndex = 20;
+            label11.Text = "Address";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(34, 536);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(694, 61);
+            textBox3.TabIndex = 19;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 782);
+            ClientSize = new Size(800, 1011);
+            Controls.Add(label11);
+            Controls.Add(textBox3);
             Controls.Add(comboBox2);
             Controls.Add(button1);
             Controls.Add(label9);
@@ -263,5 +285,7 @@
         private TextBox textBox6;
         private Button button1;
         private ComboBox comboBox2;
+        private Label label11;
+        private TextBox textBox3;
     }
 }

@@ -116,6 +116,17 @@ namespace Test
                 card.Controls.Add(address);
 
 
+                //district
+                Label district = new Label();
+                district.Text = row["District"].ToString(); ;
+                district.Font = new Font("Segoe UI Emoji", 12);
+                district.Left = 300;
+                district.Top = 150;
+                district.AutoSize = true;
+                card.Controls.Add(district);
+
+
+
 
                 // Price
                 //Total Price = (price_per_one_person × Nights ) + Additional Guest Prices
