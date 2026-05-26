@@ -121,15 +121,15 @@
             // reg_as_hotel_owner
             // 
             reg_as_hotel_owner.Name = "reg_as_hotel_owner";
-            reg_as_hotel_owner.Size = new Size(268, 26);
-            reg_as_hotel_owner.Text = "Register As A Hotel Owner";
+            reg_as_hotel_owner.Size = new Size(319, 26);
+            reg_as_hotel_owner.Text = "Register / Login As A Hotel Owner";
             reg_as_hotel_owner.Click += reg_as_hotel_owner_Click;
             // 
             // reg_as_a_traveller
             // 
             reg_as_a_traveller.Name = "reg_as_a_traveller";
-            reg_as_a_traveller.Size = new Size(268, 26);
-            reg_as_a_traveller.Text = "Register As A Traveller";
+            reg_as_a_traveller.Size = new Size(319, 26);
+            reg_as_a_traveller.Text = "Register / Login As A Traveller";
             // 
             // Form1
             // 

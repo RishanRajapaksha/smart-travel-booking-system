@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.74.0" />
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
 
