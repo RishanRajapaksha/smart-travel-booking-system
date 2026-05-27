@@ -235,6 +235,7 @@
             button3.TabIndex = 19;
             button3.Text = "Login with Google";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
