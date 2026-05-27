@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Auth;
 using MySql.Data.MySqlClient;
+using Mysqlx;
 using System.Diagnostics;
 using System.Net;
 using System.Text;
@@ -14,6 +15,7 @@ namespace Test
         public Form4()
         {
             InitializeComponent();
+            
         }
 
 
@@ -299,39 +301,123 @@ namespace Test
                 var password = payload.Subject;
 
 
-                //7.Adding GoogleUser Informations to the Database
+                //7.Adding GoogleUser Informations to the Database     
                 MySqlConnection conn = new MySqlConnection(connectionString);
+
                 try
                 {
-
                     conn.Open();
 
                     string query = @"INSERT INTO property_owner
-            (Name, Phone, Email, Password)
-            VALUES
-            (@name, @phone, @email, @password)";
+                    (Name, Phone, Email, Password)
+                    VALUES
+                    (@name, @phone, @email, @password)";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@name", name);
-                    cmd.Parameters.AddWithValue("@phone", 0000000000);
+                    cmd.Parameters.AddWithValue("@phone", 0);
                     cmd.Parameters.AddWithValue("@email", email);
                     cmd.Parameters.AddWithValue("@password", password);
 
-                    cmd.ExecuteNonQuery();
+                    int result = cmd.ExecuteNonQuery();
 
-                    Debug.WriteLine("Inserted Successfully");
-                    MessageBox.Show("Registration Successfull !");
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Registration Successful!",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No data was inserted. Please try again.",
+                            "Warning",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
+                }
+                //8. All Posiable Error handling
+                catch (MySqlException ex)
+                {
+                    string msg;
+
+                    switch (ex.Number)
+                    {
+                        case 0:
+                            msg = "Cannot connect to database server.";
+                            break;
+
+                        case 1042:
+                            msg = "Database server is unreachable.";
+                            break;
+
+                        case 1045:
+                            msg = "Invalid database username or password.";
+                            break;
+
+                        case 1049:
+                            msg = "Database not found.";
+                            break;
+
+                        case 1062:
+                            msg = "This email already exists. Try another email.";
+                            break;
+
+                        case 1054:
+                            msg = "Invalid column name in database query.";
+                            break;
+
+                        case 1146:
+                            msg = "Table does not exist in database.";
+                            break;
+
+                        case 1406:
+                            msg = "Data too long for one of the fields.";
+                            break;
+
+                        case 1452:
+                            msg = "Foreign key constraint failed.";
+                            break;
+
+                        default:
+                            msg = "Database error occurred: " + ex.Message;
+                            break;
+                    }
+
+                    MessageBox.Show(msg,
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                catch (NullReferenceException)
+                {
+                    MessageBox.Show("Some required fields are missing.",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Invalid data format entered.",
+                        "Format Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine(ex.Message);
+                    MessageBox.Show("Unexpected error occurred:\n" + ex.Message,
+                        "System Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
                 }
                 finally
                 {
-                    conn.Close();
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
                 }
-
 
             }
 
