@@ -225,38 +225,130 @@ namespace Test
 
             //Reading "emails" and "passwords" details from the "property owner" table to check whether the entered data is correct?
             MySqlConnection conn = new MySqlConnection(connectionString);
+
             try
             {
+                
+                if (string.IsNullOrWhiteSpace(email) ||
+                    string.IsNullOrWhiteSpace(password))
+                {
+                    MessageBox.Show("Please enter Email and Password.",
+                        "Validation Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
+                }
+
                 conn.Open();
 
                 string query = "SELECT * FROM property_owner WHERE Email=@Email AND Password=@Password";
 
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.Parameters.AddWithValue("@Password", password);
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    MessageBox.Show("Login Success!");
+                    cmd.Parameters.AddWithValue("@Email", email.Trim());
+                    cmd.Parameters.AddWithValue("@Password", password);
 
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Login Successful!",
+                                "Success",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Email or Password.",
+                                "Login Failed",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                        }
+                    }
                 }
-                else
+            }
+            catch (MySqlException ex)
+            {
+                string msg;
+
+                switch (ex.Number)
                 {
-                    MessageBox.Show("Invalid Email or Password");
+                    case 0:
+                        msg = "Cannot connect to database server.";
+                        break;
+
+                    case 1042:
+                        msg = "Database server is unreachable.";
+                        break;
+
+                    case 1045:
+                        msg = "Invalid database username or password.";
+                        break;
+
+                    case 1049:
+                        msg = "Database not found.";
+                        break;
+
+                    case 1054:
+                        msg = "Column error (Email or Password column missing).";
+                        break;
+
+                    case 1146:
+                        msg = "Table 'property_owner' does not exist.";
+                        break;
+
+                    case 2003:
+                        msg = "Cannot connect to MySQL server.";
+                        break;
+
+                    case 2013:
+                        msg = "Lost connection during login process.";
+                        break;
+
+                    default:
+                        msg = "Database error:\n" + ex.Message;
+                        break;
                 }
 
-                reader.Close();
+                MessageBox.Show(msg,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Some required data is missing (null value detected).",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Invalid database operation or connection issue.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Invalid input format detected.",
+                    "Format Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Unexpected system error:\n" + ex.Message,
+                    "System Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
             finally
             {
-                conn.Close();
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
             }
         }
 
