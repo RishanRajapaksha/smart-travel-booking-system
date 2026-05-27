@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|d:\\previous document folder\\ai based c# project\\smart-travel-booking-system\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|d:\\previous document folder\\ai based c# project\\smart-travel-booking-system\\test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|d:\\previous document folder\\ai based c# project\\smart-travel-booking-system\\test\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\test\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64B1424B-9C16-4E6F-8E29-F44D49C43EEE}|Test\\Test.csproj|solutionrelative:test\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form2.cs",
-              "RelativeDocumentMoniker": "Test\\Form2.cs",
-              "ToolTip": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form2.cs",
-              "RelativeToolTip": "Test\\Form2.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwFAAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form4.cs",
+              "RelativeDocumentMoniker": "Test\\Form4.cs",
+              "ToolTip": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form4.cs",
+              "RelativeToolTip": "Test\\Form4.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowI8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T02:53:44.242Z",
+              "WhenOpened": "2026-05-27T03:10:45.679Z",
               "EditorCaption": ""
             },
             {
@@ -63,42 +51,6 @@
               "RelativeToolTip": "Test\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T11:47:24.94Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form2.cs",
-              "RelativeDocumentMoniker": "Test\\Form2.cs",
-              "ToolTip": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form2.cs [Design]",
-              "RelativeToolTip": "Test\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T11:47:21.678Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form1.cs",
-              "RelativeDocumentMoniker": "Test\\Form1.cs",
-              "ToolTip": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form1.cs [Design]",
-              "RelativeToolTip": "Test\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T11:47:18.263Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form3.cs",
-              "RelativeDocumentMoniker": "Test\\Form3.cs",
-              "ToolTip": "D:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Form3.cs [Design]",
-              "RelativeToolTip": "Test\\Form3.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T11:47:23.596Z",
               "EditorCaption": " [Design]"
             }
           ]

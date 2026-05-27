@@ -36,6 +36,8 @@ namespace Test
 
         }
 
+        //This is a function created by the "Google"
+        //Just call this function. That's all.
         public async Task GoogleLogin()
         {
             var clientId = Environment.GetEnvironmentVariable("GOOGLE_LOGIN_CLIENT_ID") ?? "";
@@ -99,6 +101,45 @@ namespace Test
             Debug.WriteLine("Name: " + payload.Name);
             Debug.WriteLine("Email: " + payload.Email);
             Debug.WriteLine("ID: " + payload.Subject);
+
+            
+            var name = payload.Name;
+            var phone_number = 0000000000;
+            var email = payload.Email;
+            var password = payload.Subject;
+
+
+
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            try
+            {
+                
+                conn.Open();
+
+                string query = @"INSERT INTO property_owner
+                    (Name, Phone, Email, Password)
+                    VALUES
+                    (@name, @phone, @email, @password)";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@phone", phone_number);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                cmd.ExecuteNonQuery();
+
+                Debug.WriteLine("Inserted Successfully");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,7 +169,7 @@ namespace Test
             MySqlConnection conn = new MySqlConnection(connectionString);
             try
             {
-               
+
                 {
                     conn.Open();
 
@@ -239,6 +280,11 @@ namespace Test
             {
                 conn.Close();
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
