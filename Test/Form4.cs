@@ -61,67 +61,147 @@ namespace Test
 
 
             MySqlConnection conn = new MySqlConnection(connectionString);
+
             try
             {
-
+               
+                if (string.IsNullOrWhiteSpace(name) ||
+                    string.IsNullOrWhiteSpace(email) ||
+                    string.IsNullOrWhiteSpace(password))
                 {
-                    conn.Open();
+                    MessageBox.Show("Please fill all required fields (Name, Email, Password).",
+                        "Validation Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
+                }
 
-                    string query = @"INSERT INTO property_owner
-                            (Name, Phone, Email, Password)
-                            VALUES
-                            (@name, @phone, @email, @password)";
+                conn.Open();
 
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                string query = @"INSERT INTO property_owner
+                    (Name, Phone, Email, Password)
+                    VALUES
+                    (@name, @phone, @email, @password)";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@phone", phone_number);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
                     {
-                        cmd.Parameters.AddWithValue("@name", name);
-                        cmd.Parameters.AddWithValue("@phone", phone_number);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", password);
-
-                        int result = cmd.ExecuteNonQuery();
-
-                        if (result > 0)
-                        {
-                            MessageBox.Show("Data inserted successfully!",
-                                "Success",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Insert failed!",
-                                "Warning",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                        }
+                        MessageBox.Show("Successfully Registed!",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insert failed. No data was saved.",
+                            "Warning",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
                     }
                 }
             }
             catch (MySqlException ex)
             {
+                string msg;
 
-                if (ex.Number == 1062)
+                switch (ex.Number)
                 {
-                    MessageBox.Show("Email already exists!",
-                        "Duplicate Entry",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
+                    case 0:
+                        msg = "Cannot connect to database server.";
+                        break;
+
+                    case 1042:
+                        msg = "Database server is unreachable.";
+                        break;
+
+                    case 1045:
+                        msg = "Invalid database username or password.";
+                        break;
+
+                    case 1049:
+                        msg = "Database not found.";
+                        break;
+
+                    case 1054:
+                        msg = "Invalid column name in SQL query.";
+                        break;
+
+                    case 1062:
+                        msg = "Email already exists.";
+                        break;
+
+                    case 1146:
+                        msg = "Table does not exist in database.";
+                        break;
+
+                    case 1406:
+                        msg = "Data too long for one of the fields.";
+                        break;
+
+                    case 1452:
+                        msg = "Foreign key constraint failed.";
+                        break;
+
+                    case 2003:
+                        msg = "Cannot connect to MySQL server.";
+                        break;
+
+                    case 2013:
+                        msg = "Lost connection to MySQL server during query.";
+                        break;
+
+                    default:
+                        msg = "Database error occurred:\n" + ex.Message;
+                        break;
                 }
-                else
-                {
-                    MessageBox.Show("Database Error: " + ex.Message,
-                        "SQL Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Unexpected Error: " + ex.Message,
+
+                MessageBox.Show(msg,
                     "Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Some required data is missing (null value detected).",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Invalid data format entered.",
+                    "Format Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Invalid database operation (connection issue or command issue).",
+                    "Operation Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unexpected system error:\n" + ex.Message,
+                    "System Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
             }
         }
 
