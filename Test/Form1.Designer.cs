@@ -138,7 +138,6 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.CSIRO_ScienceImage_4051_Water_surface_Burdekin_River_near_Charters_Towers_QLD;
             ClientSize = new Size(858, 474);
             Controls.Add(toolStrip1);
             Controls.Add(button2);
@@ -148,6 +147,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);

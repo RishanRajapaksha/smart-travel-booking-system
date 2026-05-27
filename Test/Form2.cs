@@ -32,7 +32,7 @@ namespace Test
             persons.Text = persons_stay.ToString();
             nights.Text = nights_stay.ToString();
 
-            DataTable dt = new DataTable(); 
+            DataTable dt = new DataTable();
 
             try
             {
@@ -86,7 +86,7 @@ namespace Test
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 // Example image
-                pic.Image = Image.FromFile(@"C:\Users\Rishan_Rajapaksha\Downloads\images.jpg");
+                pic.Image = Image.FromFile(@"D:\Previous Document Folder\AI Based C# Project\Test Photo.jpg");
 
                 // Hotel Name
                 Label title = new Label();
@@ -138,10 +138,11 @@ namespace Test
 
                 if (persons_stay > 1)
                 {
-                     total = (price_per_one_person * nights_stay) + (additional_guest_prices * persons_stay);
+                    total = (price_per_one_person * nights_stay) + (additional_guest_prices * persons_stay);
                 }
-                else {
-                     total = (price_per_one_person * nights_stay);
+                else
+                {
+                    total = (price_per_one_person * nights_stay);
                 }
 
 
@@ -168,7 +169,7 @@ namespace Test
                 // Add controls to card
                 card.Controls.Add(pic);
                 card.Controls.Add(title);
-             
+
                 card.Controls.Add(price);
                 //card.Controls.Add(btn);
 
@@ -200,6 +201,11 @@ namespace Test
         }
 
         private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
