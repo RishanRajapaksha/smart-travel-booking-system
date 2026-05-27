@@ -107,7 +107,7 @@ namespace Test
                             MessageBoxIcon.Warning);
                     }
                 }
-            }
+            } //All Posiable Error handling
             catch (MySqlException ex)
             {
                 string msg;
@@ -266,7 +266,7 @@ namespace Test
                         }
                     }
                 }
-            }
+            }//All Posiable Error handling
             catch (MySqlException ex)
             {
                 string msg;
@@ -716,7 +716,7 @@ namespace Test
                             }
                         }
                     }
-                }
+                } //8. All Posiable Error handling
                 catch (MySqlException ex)
                 {
                     string msg;
