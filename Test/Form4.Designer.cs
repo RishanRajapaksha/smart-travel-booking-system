@@ -49,7 +49,6 @@
             textBox7 = new TextBox();
             button3 = new Button();
             button4 = new Button();
-            label11 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -248,24 +247,11 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.Red;
-            label11.Location = new Point(65, 791);
-            label11.Name = "label11";
-            label11.Size = new Size(69, 23);
-            label11.TabIndex = 21;
-            label11.Text = "label11";
-            label11.Visible = false;
-            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(888, 840);
-            Controls.Add(label11);
+            ClientSize = new Size(888, 803);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(label9);
@@ -317,6 +303,5 @@
         private TextBox textBox7;
         private Button button3;
         private Button button4;
-        private Label label11;
     }
 }

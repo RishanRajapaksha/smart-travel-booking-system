@@ -393,9 +393,9 @@ namespace Test
 
 
 
-        //This is the "Google User" Registration and Login Handling Class
-        class Google(String connectionString)
-        {
+//This is the "Google User" Registration and Login Handling Class
+class Google(String connectionString)
+{
 
 
 
@@ -601,7 +601,7 @@ namespace Test
 
 
 
-            //This function handles the "Google User Registration" Part    
+            //This function handles the "Google User Login" Part    
             public async Task GoogleUserLogin()
             {
                 var clientId = Environment.GetEnvironmentVariable("GOOGLE_LOGIN_CLIENT_ID") ?? "";
@@ -709,10 +709,12 @@ namespace Test
                             }
                             else
                             {
-                                MessageBox.Show("Invalid Email or Password. Please try again.",
+                                MessageBox.Show("You must register, Before Login to the System !",
                                     "Login Failed",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Warning);
+
+
                             }
                         }
                     }
