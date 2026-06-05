@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form3
+    partial class hotel_registration_form
     {
         /// <summary>
         /// Required designer variable.
@@ -234,7 +234,7 @@
             textBox3.Size = new Size(694, 61);
             textBox3.TabIndex = 19;
             // 
-            // Form3
+            // hotel_registration_form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -259,8 +259,9 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Name = "Form3";
-            Text = "Form3";
+            Name = "hotel_registration_form";
+            SizeGripStyle = SizeGripStyle.Hide;
+            Text = "Hotel Registration Form";
             ResumeLayout(false);
             PerformLayout();
         }

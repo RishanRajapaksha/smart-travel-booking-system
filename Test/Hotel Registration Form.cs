@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Test
 {
-    public partial class Form3 : Form
+    public partial class hotel_registration_form : Form
     {
         string connectionString = "server=localhost;user=root;password=;database=travelDB;port=3306;";
 
-        public Form3()
+        public hotel_registration_form()
         {
             InitializeComponent();
 

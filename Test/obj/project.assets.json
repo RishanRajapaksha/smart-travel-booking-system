@@ -858,11 +858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
+      "projectPath": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Previous Document Folder\\AI Based C# Project\\smart-travel-booking-system\\Test\\obj\\",
+      "outputPath": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

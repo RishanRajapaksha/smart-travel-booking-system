@@ -9,11 +9,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Test
 {
-    public partial class Form1 : Form
+    public partial class home_page : Form
     {
         private static readonly HttpClient client = new HttpClient();
 
-        public Form1()
+        public home_page()
         {
             InitializeComponent();
         }
@@ -66,7 +66,7 @@ namespace Test
 
                     //Debug.WriteLine(output);
 
-                    Form form2 = new Form2(output);
+                    Form form2 = new best_matching_hotels_page(output);
                     form2.Show();
 
 
@@ -90,13 +90,13 @@ namespace Test
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form3 = new Form3();
+            Form form3 = new hotel_registration_form();
             form3.Show();
         }
 
         private void reg_as_hotel_owner_Click(object sender, EventArgs e)
         {
-            Form form4 = new Form4();
+            Form form4 = new hotel_owner_form();
             form4.Show();
         }
 

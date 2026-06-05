@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form4
+    partial class hotel_owner_form
     {
         /// <summary>
         /// Required designer variable.
@@ -247,7 +247,7 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // Form4
+            // hotel_owner_form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -273,8 +273,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form4";
-            Text = "Form4";
+            Name = "hotel_owner_form";
+            Text = "Register or Login As A Hotel Owner";
             Load += Form4_Load;
             ResumeLayout(false);
             PerformLayout();

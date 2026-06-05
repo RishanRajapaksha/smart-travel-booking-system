@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form2
+    partial class best_matching_hotels_page
     {
         /// <summary>
         /// Required designer variable.
@@ -197,7 +197,7 @@
             flowLayoutPanel1.WrapContents = false;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
-            // Form2
+            // best_matching_hotels_page
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -217,8 +217,8 @@
             Controls.Add(sri_lankan_city);
             Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Form2";
-            Text = "Form2";
+            Name = "best_matching_hotels_page";
+            Text = "Best Matching Hotels Page";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

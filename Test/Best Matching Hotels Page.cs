@@ -14,10 +14,10 @@ using System.Drawing;
 
 namespace Test
 {
-    public partial class Form2 : Form
+    public partial class best_matching_hotels_page : Form
     {
         string connectionString = "server=localhost;user=root;password=;database=travelDB;port=3306;";
-        public Form2(String output)
+        public best_matching_hotels_page(String output)
         {
 
             InitializeComponent();
@@ -86,7 +86,7 @@ namespace Test
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 // Example image
-                pic.Image = Image.FromFile(@"D:\Previous Document Folder\AI Based C# Project\Test Photo.jpg");
+                pic.Image = Image.FromFile(@"C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\Test Photo.jpg");
 
                 // Hotel Name
                 Label title = new Label();

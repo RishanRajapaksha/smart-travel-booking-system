@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form1
+    partial class home_page
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home_page));
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -134,7 +134,7 @@
             reg_as_a_traveller.Size = new Size(319, 26);
             reg_as_a_traveller.Text = "Register / Login As A Traveller";
             // 
-            // Form1
+            // home_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -145,8 +145,8 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "home_page";
+            Text = "Home Page";
             Load += Form1_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();

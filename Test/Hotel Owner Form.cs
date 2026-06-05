@@ -7,12 +7,12 @@ using System.Text;
 
 namespace Test
 {
-    public partial class Form4 : Form
+    public partial class hotel_owner_form : Form
     {
         string connectionString = "server=localhost;user=root;password=;database=travelDB;port=3306;";
 
 
-        public Form4()
+        public hotel_owner_form()
         {
             InitializeComponent();
             
