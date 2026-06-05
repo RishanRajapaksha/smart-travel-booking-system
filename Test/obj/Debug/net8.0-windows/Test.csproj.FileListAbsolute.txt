@@ -166,3 +166,4 @@ C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Projec
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.best_matching_hotels_page.resources
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_registration_form.resources
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_owner_form.resources
+C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_owner_dashboard.resources

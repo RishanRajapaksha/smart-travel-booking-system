@@ -66,6 +66,7 @@ namespace Test
 
                     //Debug.WriteLine(output);
 
+                    
                     Form form2 = new best_matching_hotels_page(output);
                     form2.Show();
 

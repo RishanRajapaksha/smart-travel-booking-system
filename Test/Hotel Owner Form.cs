@@ -1,6 +1,7 @@
 ﻿using Google.Apis.Auth;
 using MySql.Data.MySqlClient;
 using Mysqlx;
+using Mysqlx.Crud;
 using System.Diagnostics;
 using System.Net;
 using System.Text;
@@ -98,6 +99,19 @@ namespace Test
                             "Success",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
+
+
+
+                        //In Here, Close the "hotel_owner_form" Window and open "hotel_owner_dashboard" 
+                        Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                        hotel_owner_dashboard.Show();
+
+                        Form hotel_owner_form = new hotel_owner_form();
+                        this.Close();
+
+
+
+
                     }
                     else
                     {
@@ -256,6 +270,13 @@ namespace Test
                                 "Success",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
+                            
+                            //In Here, Close the "hotel_owner_form" Window and open "hotel_owner_dashboard" 
+                            Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                            hotel_owner_dashboard.Show();
+
+                            Form hotel_owner_form = new hotel_owner_form();
+                            this.Close();
                         }
                         else
                         {
@@ -500,6 +521,12 @@ class Google(String connectionString)
                             "Success",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
+
+                        //In Here, open the "hotel_owner_dashboard" 
+                        Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                        hotel_owner_dashboard.Show();
+
+                        
                     }
                     else
                     {
@@ -686,7 +713,8 @@ class Google(String connectionString)
                             "Validation Error",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
-                        return;
+                            
+                            return;
                     }
 
                     conn.Open();
@@ -706,6 +734,10 @@ class Google(String connectionString)
                                     "Success",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
+
+                                //In Here, open the "hotel_owner_dashboard" 
+                                Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                                hotel_owner_dashboard.Show();
                             }
                             else
                             {
