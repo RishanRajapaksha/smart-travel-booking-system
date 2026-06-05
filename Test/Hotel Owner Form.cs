@@ -103,7 +103,7 @@ namespace Test
 
 
                         //In Here, Close the "hotel_owner_form" Window and open "hotel_owner_dashboard" 
-                        Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                        Form hotel_owner_dashboard = new hotel_owner_dashboard(email,password);
                         hotel_owner_dashboard.Show();
 
                         Form hotel_owner_form = new hotel_owner_form();
@@ -272,7 +272,7 @@ namespace Test
                                 MessageBoxIcon.Information);
                             
                             //In Here, Close the "hotel_owner_form" Window and open "hotel_owner_dashboard" 
-                            Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                            Form hotel_owner_dashboard = new hotel_owner_dashboard(email,password);
                             hotel_owner_dashboard.Show();
 
                             Form hotel_owner_form = new hotel_owner_form();
@@ -523,7 +523,7 @@ class Google(String connectionString)
                             MessageBoxIcon.Information);
 
                         //In Here, open the "hotel_owner_dashboard" 
-                        Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                        Form hotel_owner_dashboard = new hotel_owner_dashboard(email, password);
                         hotel_owner_dashboard.Show();
 
                         
@@ -736,7 +736,7 @@ class Google(String connectionString)
                                     MessageBoxIcon.Information);
 
                                 //In Here, open the "hotel_owner_dashboard" 
-                                Form hotel_owner_dashboard = new hotel_owner_dashboard();
+                                Form hotel_owner_dashboard = new hotel_owner_dashboard(email, password);
                                 hotel_owner_dashboard.Show();
                             }
                             else

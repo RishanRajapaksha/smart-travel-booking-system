@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,13 @@ namespace Test
 {
     public partial class hotel_owner_dashboard : Form
     {
-        public hotel_owner_dashboard()
+        public hotel_owner_dashboard(String email, String password)
         {
             InitializeComponent();
+
+
+            Debug.WriteLine("Here is the email" + email);
+            Debug.WriteLine("Here is the password :" + password);
         }
     }
 }
