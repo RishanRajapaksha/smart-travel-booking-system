@@ -127,5 +127,15 @@ namespace Test
         {
 
         }
+
+        private void hotel_owner_dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

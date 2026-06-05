@@ -30,6 +30,9 @@
         {
             label1 = new Label();
             dataGridView1 = new DataGridView();
+            label2 = new Label();
+            button1 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -37,7 +40,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(413, 37);
+            label1.Location = new Point(361, 32);
             label1.Name = "label1";
             label1.Size = new Size(336, 38);
             label1.TabIndex = 0;
@@ -46,22 +49,55 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 88);
+            dataGridView1.Location = new Point(25, 345);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1069, 225);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(25, 294);
+            label2.Name = "label2";
+            label2.Size = new Size(232, 31);
+            label2.TabIndex = 2;
+            label2.Text = "My Registered Hotels";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(409, 171);
+            button1.Name = "button1";
+            button1.Size = new Size(228, 55);
+            button1.TabIndex = 3;
+            button1.Text = "Register Hotel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(413, 148);
+            label3.Name = "label3";
+            label3.Size = new Size(219, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Click Here to register your hotel";
+            // 
             // hotel_owner_dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1106, 597);
+            Controls.Add(label3);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "hotel_owner_dashboard";
             Text = "Hotel Owner Dashboard";
+            Load += hotel_owner_dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -71,5 +107,8 @@
 
         private Label label1;
         private DataGridView dataGridView1;
+        private Label label2;
+        private Button button1;
+        private Label label3;
     }
 }
