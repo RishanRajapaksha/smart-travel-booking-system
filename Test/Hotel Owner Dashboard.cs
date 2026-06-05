@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +14,17 @@ namespace Test
 {
     public partial class hotel_owner_dashboard : Form
     {
+        
         public hotel_owner_dashboard(String email, String password)
         {
             InitializeComponent();
 
 
-            Debug.WriteLine("Here is the email" + email);
-            Debug.WriteLine("Here is the password :" + password);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

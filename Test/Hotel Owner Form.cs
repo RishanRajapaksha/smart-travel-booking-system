@@ -79,7 +79,7 @@ namespace Test
 
                 conn.Open();
 
-                string query = @"INSERT INTO property_owner
+                string query = @"INSERT INTO hotel_owner
                     (Name, Phone, Email, Password)
                     VALUES
                     (@name, @phone, @email, @password)";
@@ -255,7 +255,7 @@ namespace Test
 
                 conn.Open();
 
-                string query = "SELECT * FROM property_owner WHERE Email=@Email AND Password=@Password";
+                string query = "SELECT * FROM hotel_owner WHERE Email=@Email AND Password=@Password";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -315,7 +315,7 @@ namespace Test
                         break;
 
                     case 1146:
-                        msg = "Table 'property_owner' does not exist.";
+                        msg = "Table 'hotel_owner' does not exist.";
                         break;
 
                     case 2003:
@@ -501,7 +501,7 @@ class Google(String connectionString)
                 {
                     conn.Open();
 
-                    string query = @"INSERT INTO property_owner
+                    string query = @"INSERT INTO hotel_owner
                     (Name, Phone, Email, Password)
                     VALUES
                     (@name, @phone, @email, @password)";
@@ -719,7 +719,7 @@ class Google(String connectionString)
 
                     conn.Open();
 
-                    string query = "SELECT * FROM property_owner WHERE Email=@Email AND Password=@Password";
+                    string query = "SELECT * FROM hotel_owner WHERE Email=@Email AND Password=@Password";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
@@ -778,7 +778,7 @@ class Google(String connectionString)
                             break;
 
                         case 1146:
-                            msg = "Table 'property_owner' does not exist.";
+                            msg = "Table 'hotel_owner' does not exist.";
                             break;
 
                         case 2003:
