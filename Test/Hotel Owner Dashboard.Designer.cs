@@ -29,26 +29,40 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(123, 180);
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(413, 37);
             label1.Name = "label1";
-            label1.Size = new Size(525, 41);
+            label1.Size = new Size(336, 38);
             label1.TabIndex = 0;
-            label1.Text = "HI! I am the \"Hotel Owner Dashboard\"";
+            label1.Text = "Hotel Owner Dashboard";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(25, 88);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1069, 225);
+            dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // hotel_owner_dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1106, 597);
+            Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "hotel_owner_dashboard";
             Text = "Hotel Owner Dashboard";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -56,5 +70,6 @@
         #endregion
 
         private Label label1;
+        private DataGridView dataGridView1;
     }
 }
