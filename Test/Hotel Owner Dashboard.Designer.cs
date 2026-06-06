@@ -33,6 +33,7 @@
             label2 = new Label();
             button1 = new Button();
             label3 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -85,11 +86,22 @@
             label3.TabIndex = 4;
             label3.Text = "Click Here to register your hotel";
             // 
+            // button2
+            // 
+            button2.Location = new Point(275, 295);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 5;
+            button2.Text = "🔄️ Refresh";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // hotel_owner_dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1106, 597);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -110,5 +122,6 @@
         private Label label2;
         private Button button1;
         private Label label3;
+        private Button button2;
     }
 }

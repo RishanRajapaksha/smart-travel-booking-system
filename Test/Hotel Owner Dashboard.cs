@@ -139,5 +139,13 @@ namespace Test
             Form hotel_registration_form = new hotel_registration_form(HotelOwnerID);
             hotel_registration_form.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.Rows.Clear();
+            dataGridView1.Columns.Clear();
+            LoadProperties();
+        }
     }
 }
