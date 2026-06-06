@@ -16,9 +16,10 @@ namespace Test
     {
         string connectionString = "server=localhost;user=root;password=;database=travelDB;port=3306;";
 
-        public hotel_registration_form()
+        public hotel_registration_form(int HotelOwnerID)
         {
             InitializeComponent();
+            Debug.WriteLine("This is the Hotel Owner ID "+ HotelOwnerID);
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {

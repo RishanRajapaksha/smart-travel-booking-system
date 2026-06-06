@@ -135,7 +135,8 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form hotel_registration_form = new hotel_registration_form();
+            int HotelOwnerID = GetHotelOwnerID();
+            Form hotel_registration_form = new hotel_registration_form(HotelOwnerID);
             hotel_registration_form.Show();
         }
     }
