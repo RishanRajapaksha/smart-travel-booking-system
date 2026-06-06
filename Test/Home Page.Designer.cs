@@ -33,7 +33,6 @@
             textBox1 = new TextBox();
             label2 = new Label();
             button1 = new Button();
-            button2 = new Button();
             toolStrip1 = new ToolStrip();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
             reg_as_hotel_owner = new ToolStripMenuItem();
@@ -85,17 +84,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(649, 419);
-            button2.Name = "button2";
-            button2.Size = new Size(161, 29);
-            button2.TabIndex = 4;
-            button2.Text = "Register Your Hotel";
-            button2.UseVisualStyleBackColor = true;
-            button2.Visible = false;
-            button2.Click += button2_Click;
-            // 
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
@@ -140,7 +128,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(858, 474);
             Controls.Add(toolStrip1);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(textBox1);
@@ -160,7 +147,6 @@
         private TextBox textBox1;
         private Label label2;
         private Button button1;
-        private Button button2;
         private ToolStrip toolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton1;
         private ToolStripMenuItem reg_as_hotel_owner;

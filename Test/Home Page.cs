@@ -89,11 +89,7 @@ namespace Test
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form form3 = new hotel_registration_form();
-            form3.Show();
-        }
+        
 
         private void reg_as_hotel_owner_Click(object sender, EventArgs e)
         {
