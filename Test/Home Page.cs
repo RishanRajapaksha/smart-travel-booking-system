@@ -16,6 +16,8 @@ namespace Test
         public home_page()
         {
             InitializeComponent();
+
+
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -66,7 +68,7 @@ namespace Test
 
                     //Debug.WriteLine(output);
 
-                    
+
                     Form form2 = new best_matching_hotels_page(output);
                     form2.Show();
 
@@ -89,7 +91,7 @@ namespace Test
 
         }
 
-        
+
 
         private void reg_as_hotel_owner_Click(object sender, EventArgs e)
         {
@@ -108,6 +110,16 @@ namespace Test
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

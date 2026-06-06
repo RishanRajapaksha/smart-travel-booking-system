@@ -37,6 +37,7 @@
             toolStripDropDownButton1 = new ToolStripDropDownButton();
             reg_as_hotel_owner = new ToolStripMenuItem();
             reg_as_a_traveller = new ToolStripMenuItem();
+            label3 = new Label();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonFace;
             label1.Font = new Font("Segoe Fluent Icons", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(237, 117);
+            label1.Location = new Point(267, 103);
             label1.Name = "label1";
             label1.Size = new Size(332, 60);
             label1.TabIndex = 0;
@@ -54,20 +55,21 @@
             // 
             // textBox1
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(82, 246);
+            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Location = new Point(84, 508);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "I want to travel to Kadawatha. I am traveling with my 2 kids. I will stay 2 nights.";
             textBox1.Size = new Size(666, 67);
             textBox1.TabIndex = 1;
-            textBox1.Text = "I want to travel to Kadawatha. I am traveling with my 2 kids.this variables. I will stay 2 nights.";
+            textBox1.TabStop = false;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe Fluent Icons", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(176, 177);
+            label2.Location = new Point(206, 163);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.Yes;
             label2.Size = new Size(437, 37);
@@ -76,7 +78,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(237, 329);
+            button1.Location = new Point(237, 589);
             button1.Name = "button1";
             button1.Size = new Size(329, 39);
             button1.TabIndex = 3;
@@ -90,7 +92,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(858, 74);
+            toolStrip1.Size = new Size(862, 74);
             toolStrip1.TabIndex = 5;
             toolStrip1.Text = "Login";
             toolStrip1.ItemClicked += toolStrip1_ItemClicked;
@@ -122,17 +124,32 @@
             reg_as_a_traveller.Size = new Size(319, 26);
             reg_as_a_traveller.Text = "Register / Login As A Traveller";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Variable Text Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(261, 364);
+            label3.Name = "label3";
+            label3.Size = new Size(310, 120);
+            label3.TabIndex = 6;
+            label3.Text = "Just Tell Us, \r\n\r\nWhere You Wanna Go?  📍\r\nHow Many People Will join you? 👥\r\nHow many night will you stay? 🌙\r\n";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Click += label3_Click;
+            // 
             // home_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 474);
+            ClientSize = new Size(862, 652);
+            Controls.Add(label3);
             Controls.Add(toolStrip1);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "home_page";
+            SizeGripStyle = SizeGripStyle.Show;
             Text = "Home Page";
             Load += Form1_Load;
             toolStrip1.ResumeLayout(false);
@@ -151,5 +168,6 @@
         private ToolStripDropDownButton toolStripDropDownButton1;
         private ToolStripMenuItem reg_as_hotel_owner;
         private ToolStripMenuItem reg_as_a_traveller;
+        private Label label3;
     }
 }
