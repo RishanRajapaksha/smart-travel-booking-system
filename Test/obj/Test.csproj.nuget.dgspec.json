@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Test.csproj": {}
+    "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Test.csproj": {
+    "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\Rishan_Rajapaksha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rishan_Rajapaksha\\source\\repos\\Test\\Test\\obj\\",
+        "projectPath": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Previous Document Folder\\Projects\\Pubuth Rishan Rajapaksha\\AI Based C# Project\\smart-travel-booking-system\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rishan_Rajapaksha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
