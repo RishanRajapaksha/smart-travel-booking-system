@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hotel_registration_form));
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -53,10 +54,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.BackColor = SystemColors.GradientInactiveCaption;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Navy;
             label1.Location = new Point(220, 18);
             label1.Name = "label1";
-            label1.Size = new Size(314, 31);
+            label1.Size = new Size(382, 38);
             label1.TabIndex = 0;
             label1.Text = "Register Your Hotel With Us";
             // 
@@ -71,6 +74,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.GradientInactiveCaption;
             label2.ForeColor = SystemColors.ControlText;
             label2.Location = new Point(34, 95);
             label2.Name = "label2";
@@ -81,6 +85,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = SystemColors.GradientInactiveCaption;
             label3.ForeColor = SystemColors.ControlText;
             label3.Location = new Point(34, 187);
             label3.Name = "label3";
@@ -109,6 +114,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = SystemColors.GradientInactiveCaption;
             label4.ForeColor = SystemColors.ControlText;
             label4.Location = new Point(34, 318);
             label4.Name = "label4";
@@ -119,6 +125,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = SystemColors.GradientInactiveCaption;
             label6.ForeColor = SystemColors.ControlText;
             label6.Location = new Point(34, 415);
             label6.Name = "label6";
@@ -129,6 +136,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Linen;
             label5.ForeColor = SystemColors.ControlText;
             label5.Location = new Point(34, 642);
             label5.Name = "label5";
@@ -146,6 +154,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Linen;
             label7.ForeColor = SystemColors.ControlText;
             label7.Location = new Point(34, 748);
             label7.Name = "label7";
@@ -163,6 +172,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.White;
             label8.ForeColor = SystemColors.ControlText;
             label8.Location = new Point(40, 778);
             label8.Name = "label8";
@@ -173,6 +183,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.White;
             label9.ForeColor = SystemColors.ControlText;
             label9.Location = new Point(395, 778);
             label9.Name = "label9";
@@ -183,6 +194,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = Color.Linen;
             label10.ForeColor = SystemColors.ControlText;
             label10.Location = new Point(389, 748);
             label10.Name = "label10";
@@ -200,12 +212,15 @@
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.MenuHighlight;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.White;
             button1.Location = new Point(47, 843);
             button1.Name = "button1";
             button1.Size = new Size(666, 39);
             button1.TabIndex = 17;
             button1.Text = "Register";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // comboBox2
@@ -219,6 +234,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.BackColor = Color.Linen;
             label11.ForeColor = SystemColors.ControlText;
             label11.Location = new Point(34, 509);
             label11.Name = "label11";
@@ -238,6 +254,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 1011);
             Controls.Add(label11);
             Controls.Add(textBox3);

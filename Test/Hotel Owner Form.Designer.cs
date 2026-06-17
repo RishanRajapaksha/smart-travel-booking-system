@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hotel_owner_form));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -54,7 +55,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.GradientInactiveCaption;
+            label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Navy;
             label1.ImageAlign = ContentAlignment.TopRight;
             label1.Location = new Point(223, 9);
             label1.Name = "label1";
@@ -66,26 +70,30 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
+            label2.BackColor = SystemColors.GradientInactiveCaption;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(106, 96);
             label2.Name = "label2";
-            label2.Size = new Size(82, 28);
+            label2.Size = new Size(101, 31);
             label2.TabIndex = 1;
             label2.Text = "Register";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F);
+            label3.BackColor = SystemColors.GradientInactiveCaption;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(600, 96);
             label3.Name = "label3";
-            label3.Size = new Size(61, 28);
+            label3.Size = new Size(75, 31);
             label3.TabIndex = 2;
             label3.Text = "Login";
             // 
             // button1
             // 
             button1.BackColor = SystemColors.MenuHighlight;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(59, 713);
             button1.Name = "button1";
@@ -105,6 +113,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = SystemColors.GradientInactiveCaption;
             label4.Location = new Point(61, 175);
             label4.Name = "label4";
             label4.Size = new Size(60, 20);
@@ -115,6 +124,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = SystemColors.GradientInactiveCaption;
             label5.Location = new Point(63, 262);
             label5.Name = "label5";
             label5.Size = new Size(115, 20);
@@ -131,6 +141,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = SystemColors.GradientInactiveCaption;
             label6.Location = new Point(63, 352);
             label6.Name = "label6";
             label6.Size = new Size(53, 20);
@@ -148,6 +159,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Linen;
             label7.Location = new Point(63, 455);
             label7.Name = "label7";
             label7.Size = new Size(81, 20);
@@ -166,6 +178,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Linen;
             label8.Location = new Point(61, 562);
             label8.Name = "label8";
             label8.Size = new Size(138, 20);
@@ -183,17 +196,20 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.FromArgb(0, 192, 0);
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(63, 649);
             button2.Name = "button2";
             button2.Size = new Size(333, 42);
             button2.TabIndex = 14;
             button2.Text = "Register";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = SystemColors.GradientInactiveCaption;
             label9.Location = new Point(468, 278);
             label9.Name = "label9";
             label9.Size = new Size(81, 20);
@@ -212,6 +228,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = SystemColors.GradientInactiveCaption;
             label10.Location = new Point(468, 175);
             label10.Name = "label10";
             label10.Size = new Size(53, 20);
@@ -228,6 +245,7 @@
             // button3
             // 
             button3.BackColor = SystemColors.MenuHighlight;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(470, 440);
             button3.Name = "button3";
@@ -239,18 +257,21 @@
             // 
             // button4
             // 
+            button4.BackColor = Color.FromArgb(0, 192, 0);
+            button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(476, 379);
             button4.Name = "button4";
             button4.Size = new Size(333, 42);
             button4.TabIndex = 20;
             button4.Text = "Login";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // hotel_owner_form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(888, 803);
             Controls.Add(button4);
             Controls.Add(button3);

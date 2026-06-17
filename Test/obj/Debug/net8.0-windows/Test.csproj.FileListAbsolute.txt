@@ -3,7 +3,6 @@ C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Test.
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Test.runtimeconfig.json
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Test.dll
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Test.pdb
-C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Form1.resources
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.csproj.GenerateResource.cache
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.AssemblyInfoInputs.cache
@@ -15,7 +14,6 @@ C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\refin
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.pdb
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.genruntimeconfig.cache
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\ref\Test.dll
-C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Form2.resources
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Google.Protobuf.dll
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
@@ -32,8 +30,6 @@ C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\runti
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.csproj.AssemblyReference.cache
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.csproj.Up2Date
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Properties.Resources.resources
-C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Form3.resources
-C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.Form4.resources
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Google.Apis.dll
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Google.Apis.Auth.dll
 C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\bin\Debug\net8.0-windows\Google.Apis.Core.dll
@@ -167,3 +163,8 @@ C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Projec
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_registration_form.resources
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_owner_form.resources
 C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\smart-travel-booking-system\Test\obj\Debug\net8.0-windows\Test.hotel_owner_dashboard.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.best_matching_hotels_page.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.home_page.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.hotel_owner_dashboard.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.hotel_owner_form.resources
+C:\Users\Rishan_Rajapaksha\source\repos\Test\Test\obj\Debug\net8.0-windows\Test.hotel_registration_form.resources

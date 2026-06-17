@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(best_matching_hotels_page));
             sri_lankan_city = new Label();
             persons = new Label();
             nights = new Label();
@@ -49,6 +50,7 @@
             // 
             sri_lankan_city.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             sri_lankan_city.AutoSize = true;
+            sri_lankan_city.BackColor = Color.White;
             sri_lankan_city.Location = new Point(188, 23);
             sri_lankan_city.Margin = new Padding(4, 0, 4, 0);
             sri_lankan_city.Name = "sri_lankan_city";
@@ -60,6 +62,7 @@
             // 
             persons.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             persons.AutoSize = true;
+            persons.BackColor = Color.White;
             persons.Location = new Point(519, 23);
             persons.Margin = new Padding(4, 0, 4, 0);
             persons.Name = "persons";
@@ -71,6 +74,7 @@
             // 
             nights.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             nights.AutoSize = true;
+            nights.BackColor = Color.White;
             nights.Location = new Point(849, 23);
             nights.Margin = new Padding(4, 0, 4, 0);
             nights.Name = "nights";
@@ -82,6 +86,7 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
             label1.Location = new Point(776, 23);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -93,6 +98,7 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
+            label2.BackColor = Color.White;
             label2.Location = new Point(436, 23);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -104,6 +110,7 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
             label3.Location = new Point(46, 23);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -189,6 +196,7 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = Color.Linen;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(27, 73);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -201,6 +209,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1192, 681);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label4);

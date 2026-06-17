@@ -29,65 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home_page));
-            label1 = new Label();
             textBox1 = new TextBox();
-            label2 = new Label();
             button1 = new Button();
             toolStrip1 = new ToolStrip();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
             reg_as_hotel_owner = new ToolStripMenuItem();
             reg_as_a_traveller = new ToolStripMenuItem();
             label3 = new Label();
+            pictureBox1 = new PictureBox();
             toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.ButtonFace;
-            label1.Font = new Font("Segoe Fluent Icons", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(267, 103);
-            label1.Name = "label1";
-            label1.Size = new Size(332, 60);
-            label1.TabIndex = 0;
-            label1.Text = "Rishan Travels";
-            label1.Click += label1_Click;
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(84, 508);
+            textBox1.BackColor = Color.FromArgb(255, 255, 192);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(133, 335);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "I want to travel to Kadawatha. I am traveling with my 2 kids. I will stay 2 nights.";
+            textBox1.PlaceholderText = "Example: I want to travel to Kadawatha. I am traveling with my 2 kids. I will stay 2 nights.";
             textBox1.Size = new Size(666, 67);
             textBox1.TabIndex = 1;
             textBox1.TabStop = false;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe Fluent Icons", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(206, 163);
-            label2.Name = "label2";
-            label2.RightToLeft = RightToLeft.Yes;
-            label2.Size = new Size(437, 37);
-            label2.TabIndex = 2;
-            label2.Text = "Smart Travel Partner in Sri Lanka";
-            // 
             // button1
             // 
-            button1.Location = new Point(237, 589);
+            button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.Highlight;
+            button1.Location = new Point(324, 463);
             button1.Name = "button1";
             button1.Size = new Size(329, 39);
             button1.TabIndex = 3;
             button1.Text = "Find Best Matching Hotels";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // toolStrip1
             // 
+            toolStrip1.BackColor = SystemColors.GradientInactiveCaption;
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1 });
             toolStrip1.Location = new Point(0, 0);
@@ -100,7 +82,7 @@
             // toolStripDropDownButton1
             // 
             toolStripDropDownButton1.Alignment = ToolStripItemAlignment.Right;
-            toolStripDropDownButton1.BackColor = SystemColors.ControlLight;
+            toolStripDropDownButton1.BackColor = SystemColors.Highlight;
             toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
             toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { reg_as_hotel_owner, reg_as_a_traveller });
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
@@ -126,15 +108,33 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
+            label3.Anchor = AnchorStyles.None;
+            label3.BackColor = Color.Linen;
             label3.Font = new Font("Segoe UI Variable Text Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(261, 364);
+            label3.ForeColor = Color.SteelBlue;
+            label3.Location = new Point(235, 171);
             label3.Name = "label3";
-            label3.Size = new Size(310, 120);
+            label3.Size = new Size(439, 120);
             label3.TabIndex = 6;
             label3.Text = "Just Tell Us, \r\n\r\nWhere You Wanna Go?  📍\r\nHow Many People Will join you? 👥\r\nHow many night will you stay? 🌙\r\n";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             label3.Click += label3_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackColor = Color.DarkGray;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Enabled = false;
+            pictureBox1.Location = new Point(0, -33);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(976, 687);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // home_page
             // 
@@ -144,9 +144,9 @@
             Controls.Add(label3);
             Controls.Add(toolStrip1);
             Controls.Add(button1);
-            Controls.Add(label2);
             Controls.Add(textBox1);
-            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "home_page";
             SizeGripStyle = SizeGripStyle.Show;
@@ -154,20 +154,19 @@
             Load += Form1_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private TextBox textBox1;
-        private Label label2;
         private Button button1;
         private ToolStrip toolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton1;
         private ToolStripMenuItem reg_as_hotel_owner;
         private ToolStripMenuItem reg_as_a_traveller;
         private Label label3;
+        private PictureBox pictureBox1;
     }
 }

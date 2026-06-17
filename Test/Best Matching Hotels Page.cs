@@ -86,7 +86,7 @@ namespace Test
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 // Example image
-                pic.Image = Image.FromFile(@"C:\Previous Document Folder\Projects\Pubuth Rishan Rajapaksha\AI Based C# Project\Test Photo.jpg");
+                pic.Image = Image.FromFile(@"C:\Users\Rishan_Rajapaksha\Downloads\images.jpg");
 
                 // Hotel Name
                 Label title = new Label();
